@@ -1,5 +1,7 @@
 # SWF player addon for retropie
 How to install:
+The simplest way is to simply run the `autosetup.sh`
+
 Install gnash using `sudo apt-get gnash`
 
 Then change the path to the roms in the `es_systems.cfg` to the path where you will store your `.swf` files.
