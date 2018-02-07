@@ -19,7 +19,7 @@ else
     echo "Strongly recommended not to continue!!!"
     echo "Please change the path of the location in this script!"
 fi
-ead -p "Continue (y/n)?" CONT
+read -p "Continue (y/n)?" CONT
 if [ "$CONT" = "y" ]; then
   [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
     echo "I warned you!"
