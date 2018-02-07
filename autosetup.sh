@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 echo "You should edit the new_es_systems.cfg to use the path where you want to store your swf files!"
 echo "Default is /home/pi/RetroPie/roms/swf"
-NEWCFG='new_es_systems.cfg'
-EXISTINGCFG='/etc/emulationstation/es_systems.cfg'
+NEWCFG="new_es_systems.cfg"
+EXISTINGCFG="/etc/emulationstation/es_systems.cfg"
 
 if [ -f "$NEWCFG" ]
 then
