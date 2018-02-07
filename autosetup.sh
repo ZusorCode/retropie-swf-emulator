@@ -38,7 +38,6 @@ then
     sudo cat "$NEWCFG" >> "$EXISTINFCFG"
     echo "Creating Rom Folder"
     mkdir /home/pi/RetroPie/roms/nes
-else
 fi
 
 
