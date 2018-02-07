@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 echo "You should edit the new_es_systems.cfg to use the path where you want to store your swf files!"
 echo "Default is /home/pi/RetroPie/roms/swf"
-NEWCFG=new_es_systems.cfg
-EXISTINGCFG=/etc/emulationstation/es_systems.cfg
+NEWCFG='new_es_systems.cfg'
+EXISTINGCFG='/etc/emulationstation/es_systems.cfg'
 
 if [ -f "$NEWCFG" ]
 then
@@ -25,7 +25,7 @@ if [ "$CONT" = "y" ]; then
     echo "Installing gnash"
     sudo apt-get install gnash
     echo "Making Backup of default es_systems.cfg at /opt/retropie/configs/all/emulationstation/es_systems.cfg"
-    sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg.
+    sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
     echo "Adding the player to Retropie"
     sed -i '$ d' $EXISTINGCFG
     sudo cat $NEWCFG >> $EXISTINFCFG
