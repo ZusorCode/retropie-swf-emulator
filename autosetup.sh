@@ -6,16 +6,16 @@ EXISTINGCFG=/etc/emulationstation/es_systems.cfg
 
 if [ -f "$NEWCFG" ]
 then
-	echo "Found new_es_systems.cfg"
+    echo "Found new_es_systems.cfg"
 else
-	echo "Could not find new_es_systems.cfg"
+    echo "Could not find new_es_systems.cfg"
     echo "Strongly recommended not to continue!!!"
 fi
 if [ -e "$EXISTINGCFG" ]
 then
-	echo "Found es_systems.cfg"
+    echo "Found es_systems.cfg"
 else
-	echo "Could not find existing es_systems.cfg"
+    echo "Could not find existing es_systems.cfg"
     echo "Strongly recommended not to continue!!!"
     echo "Please change the path of the location in this script!"
 fi
@@ -33,7 +33,9 @@ then
     sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg.
     echo "Adding the player to "
     sudo cat "$NEWCFG" >> "$EXISTINFCFG"
-    echo
+    echo "Creating Rom Folder"
+    mkdir /home/pi/RetroPie/roms/nes
+else
 fi
 
 
