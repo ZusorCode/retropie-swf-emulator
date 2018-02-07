@@ -1,5 +1,7 @@
 # SWF player addon for retropie
 How to install:
+
+
 The simplest way is to simply run the `autosetup.sh`
 
 Install gnash using `sudo apt-get gnash`
