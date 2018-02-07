@@ -37,5 +37,4 @@ then
     echo "Creating Rom Folder"
     mkdir /home/pi/RetroPie/roms/nes
 fi
-
-
+echo "Done"
