@@ -7,7 +7,6 @@ EXISTINGCFG=/etc/emulationstation/es_systems.cfg
 if [ -f "$NEWCFG" ]
 then
     echo "Found new_es_systems.cfg"
-    cat $NEWCFG
 else
     echo "Could not find new_es_systems.cfg"
     echo "Strongly recommended not to continue!!!"
@@ -15,7 +14,6 @@ fi
 if [ -e "$EXISTINGCFG" ]
 then
     echo "Found es_systems.cfg"
-    cat $EXISTINGCFG
 else
     echo "Could not find existing es_systems.cfg"
     echo "Strongly recommended not to continue!!!"
