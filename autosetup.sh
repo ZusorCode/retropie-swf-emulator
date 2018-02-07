@@ -21,10 +21,9 @@ else
 fi
 read -p "Continue (y/n)?" CONT
 if [ "$CONT" = "y" ]; then
-  [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
     echo "I warned you!"
     echo "Installing gnash"
-    sudo apt-get gnash
+    sudo apt-get install gnash
     echo "Making Backup of default es_systems.cfg at /opt/retropie/configs/all/emulationstation/es_systems.cfg"
     sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg.
     echo "Adding the player to Retropie"
