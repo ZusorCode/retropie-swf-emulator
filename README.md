@@ -1,2 +1,4 @@
-# retropie-swf-emulator
-# retropie-swf-emulator
+# SWF player addon for retropie
+##How to install:
+`sudo apt-get gnash`
+
