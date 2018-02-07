@@ -33,7 +33,8 @@ then
     sudo apt-get gnash
     echo "Making Backup of default es_systems.cfg at /opt/retropie/configs/all/emulationstation/es_systems.cfg"
     sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg.
-    echo "Adding the player to "
+    echo "Adding the player to Retropie"
+    sed -i '$ d' $EXISTINGCFG
     sudo cat "$NEWCFG" >> "$EXISTINFCFG"
     echo "Creating Rom Folder"
     mkdir /home/pi/RetroPie/roms/nes
