@@ -28,7 +28,7 @@ if [ "$CONT" = "y" ]; then
     sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
     echo "Adding the player to Retropie"
     sed -i '$ d' $EXISTINGCFG
-    sudo cat "$NEWCFG" >> "$EXISTINFCFG"
+    sudo cat new_es_systems.cfg >> /etc/emulationstation/es_systems.cfg
     echo "Creating Rom Folder"
     mkdir  /home/pi/RetroPie/roms/nes
 else
