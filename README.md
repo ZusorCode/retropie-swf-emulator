@@ -1,8 +1,9 @@
 # SWF player addon for retropie
 ## How to install:
 
-
-**The simplest way is to simply run the `autosetup.sh`**
+Download the repository.
+Give yourself modification rights using `chmod -x autosetup.sh`
+Run the setup script using `sudo ./autosetup.sh`
 ## Manual install
 Install gnash using `sudo apt-get gnash`
 
