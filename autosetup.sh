@@ -30,7 +30,7 @@ if [ "$CONT" = "y" ]; then
     sed -i '$ d' $EXISTINGCFG
     sudo cat new_es_systems.cfg >> /etc/emulationstation/es_systems.cfg
     echo "Creating Rom Folder"
-    mkdir  /home/pi/RetroPie/roms/nes
+    mkdir  /home/pi/RetroPie/roms/swf
 else
   echo "Cancelled"
 fi
